@@ -3,12 +3,14 @@ import { useState } from "react"
 
 const AuthContext=createContext()
 const authProvider=({children})=>{
-const[email,setEmail]=useState()
-const[password,setPassword]=useState()
+    const[isAuth,setIsauth]=useState()
+
 
 return(
     <div>
-        
+<authProvider value={setIsauth}>
+    {{children}}
+    </authProvider>
         
     </div>
 )
