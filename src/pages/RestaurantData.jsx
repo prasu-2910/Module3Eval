@@ -13,8 +13,22 @@ const RestaurantData = () => {
 ])
 
   return (
-    <div><h2>Restaurant data management</h2></div>
-  )
+    <>
+    <div><h2>Restaurant data management</h2>
+    <div className='cards'>
+        <p>name:{restaurantName}</p>
+        <p>Adress:{adress}</p>
+        <p>type:{type}</p>
+        <p>parkingAvailability:{<select>
+            </select>}</p>
+        <p>name:{restaurantName}</p>
+        
+        <button onClick={updatebutton}>Update</button>
+        <button onclick={deletebutton}>delete</button>
+
+    </div>
+    </div>
+ </> )
 }
 
 export default RestaurantData
