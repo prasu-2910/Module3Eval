@@ -1,17 +1,22 @@
  import { useState } from "react";
 import AuthContext from "./context/AuthContext"
+import { useNavigate } from "react-router-dom";
+
   function Login(){
     const[email,setEmail]=useState()
     const[password,setPassword]=useState()
     const setIsauth=useContext(AuthContext)
+    const Navigate=useNavigate()
 const handleLogin=()=>{
         if(email===admin@gmail.com && password=== admin1234){
             alert("admin login successfull")
+     return Navigate("/admin/dashboard")
         }
-        if (email===customer@gmail.com && password===customer1234){
-
-            alert("customer login successfull")
-        }else{ return "invalid email or password"}
+        if(email===customer@gmail.com && password=== customer1234){
+            alert("admin login successfull")
+            return Navigate("/customers/dashboard")
+        
+      
 
         }
         
