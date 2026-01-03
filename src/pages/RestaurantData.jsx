@@ -20,8 +20,10 @@ const RestaurantData = () => {
         <p>Adress:{adress}</p>
         <p>type:{type}</p>
         <p>parkingAvailability:{<select>
+            <option>available</option>
+            <option>unavailable</option>
             </select>}</p>
-        <p>name:{restaurantName}</p>
+        
         
         <button onClick={updatebutton}>Update</button>
         <button onclick={deletebutton}>delete</button>
