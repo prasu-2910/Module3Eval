@@ -22,7 +22,8 @@ const handleLogin=()=>{
 
     return(
 <>
-<div><form><input type="text" placeholder="Enter Email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+<div><form>
+    <h2>LOGIN</h2><input type="text" placeholder="Enter Email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
 
 <input type="password" placeholder="Enter password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
 <button onClick={handleLogin}>Login</button></form>
